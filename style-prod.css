@@ -201,3 +201,8 @@ main { max-width: var(--wrap); margin: 0 auto; padding: 0 var(--gut); }
   .s-dock .s-btn { flex: 1; min-height: 48px; font-size: .88rem; padding: 0 .9em; white-space: nowrap; }
   .s-dock .s-btn:first-child { flex: 1.7; }
 }
+
+/* Правка по просьбе ученика 15.10.2026: без переносов слов в заголовках; адрес в шапке не обрезается на узких телефонах */
+h1, h2, h3 { hyphens: manual !important; -webkit-hyphens: manual !important; overflow-wrap: normal !important; word-break: normal !important; }
+@media (max-width: 400px) { .s-bar__brand { font-size: .8rem !important; gap: .45em; } }
+@media (max-width: 340px) { .s-bar__brand { font-size: .66rem !important; gap: .35em; } }
